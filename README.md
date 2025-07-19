@@ -7,7 +7,7 @@
 Fuel Tracker è un'app Android per la gestione e tracciamento dei rifornimenti di carburante. Permette l'inserimento, il salvataggio locale e l'esportazione dei dati in formato CSV compatibile con Excel.
 ---
 ## Screenshot
-![Fuel Tracker Screenshot](images/screenshot.jpg)
+![Fuel Tracker Screenshot](images/screenshot1.jpg)
 ---
 ## Funzionalità
 - Inserimento dati rifornimento (tipo carburante, km, costo litro, ecc.)
