@@ -4,34 +4,35 @@
 ![Platform Android](https://img.shields.io/badge/Platform-Android-blue.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-Fuel Tracker è un'app Android per la gestione e tracciamento dei rifornimenti di carburante. Permette l'inserimento, il salvataggio locale e l'esportazione dei dati in formato CSV compatibile con Excel.
----
-## Screenshot
 ![Fuel Tracker Screenshot](images/screenshot1.jpg)
----
-## Funzionalità
-- Inserimento dati rifornimento (tipo carburante, km, costo litro, ecc.)
-- Calcolo automatico di costo/km e km/litro
-- Esportazione dati in CSV con separatore `;` per compatibilità Excel 🇮🇹
-- Spinner e dashboard semplice per navigazione
-- UI reattiva ed essenziale
----
-## Esportazione CSV
-Il nome dei file generati include la data e ora leggibili, come ad esempio:  
+
+This Android app allows users to manage and track vehicle fuel refueling — including data entry, storage, calculations, and CSV export for analysis.
+Features
+- Add refueling data (fuel type, km driven, cost per liter, total cost, etc.)
+- Store records locally using SQLite
+- View archived entries using Spinner and tabular layout
+- Automatic calculation of cost per km and fuel efficiency (km/l)
+- Export to CSV with Excel-compatible formatting 🇮🇹
+- Clean and responsive UI optimized for daily use
+
+CSV Export
+CSV export uses the `;` delimiter for full compatibility with Excel (Italian locale).  
+Files include headers and are named with readable timestamps:  
 `fuel_export_17_07_2025-10_23.csv`
----
-## Tecnologie
+
+Technologies
 - Java & XML (Android SDK)
 - SQLite database
-- GitHub (versionamento e pubblicazione)
----
-## Installazione
-1. Clona questo repository
-2. Apri il progetto con Android Studio
-3. Esegui su emulatore o dispositivo fisico
----
-## Contributi
-Pull request e suggerimenti sono sempre benvenuti ✨
----
-## Licenza
-Distribuito secondo la licenza [MIT](LICENSE).
+- GitHub (for source control and collaboration)
+
+Installation
+1. Clone this repository
+2. Open the project in Android Studio
+3. Run it on an emulator or Android device
+
+Contributions
+Pull requests, suggestions, and ideas are welcome!
+
+License
+Licensed under the [MIT](LICENSE) license.
+
