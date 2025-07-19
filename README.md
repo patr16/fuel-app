@@ -4,8 +4,7 @@
 ![Platform Android](https://img.shields.io/badge/Platform-Android-blue.svg)
 ![License MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
-![Fuel Tracker Screenshot](images/screenshot1.jpg)
-<img src="images/screenshot1.jpg" alt="Fuel Tracker Screenshot" width="500"/>
+<img src="images/screenshot1.jpg" alt="Fuel Tracker Screenshot" width="250"/>
 
 This Android app allows users to manage and track vehicle fuel refueling — including data entry, storage, calculations, and CSV export for analysis.
 Features
