@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="spinner_padding_top">1dp</dimen>
+    <dimen name="spinner_padding_bottom">1dp</dimen>
+    <dimen name="spinner_padding">1dp</dimen>
+</resources>

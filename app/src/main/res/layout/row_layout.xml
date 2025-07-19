@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableRow xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textViewLabel"
+        android:layout_width="174dp"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+    <TextView
+        android:id="@+id/textViewValue"
+        android:layout_width="188dp"
+        android:layout_height="match_parent"
+        android:textStyle="bold"
+        android:padding="8dp" />
+
+</TableRow>
+

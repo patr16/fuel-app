@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:id="@+id/goBackButton2"
+        android:layout_width="85dp"
+        android:layout_height="55dp"
+        android:background="@drawable/button_selector"
+        android:onClick="back"
+        android:padding="8dp"
+        android:text=""
+        android:textAllCaps="false"
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.007" />
+
+    <ScrollView
+        android:id="@+id/scrollView_data"
+        android:layout_width="382dp"
+        android:layout_height="614dp"
+        android:fillViewport="true"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.551"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <TextView
+            android:id="@+id/textView_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/yellowBackgroundColor"
+            android:gravity="start"
+            android:hint="@string/saved_information"
+            android:scrollbars="vertical" />
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

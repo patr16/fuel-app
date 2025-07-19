@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string name="app_name">Fuel</string>
+    <string name="zero">0</string>
+
+    <!-- activity_main -->
+    <string name="archiveButton">Archivie</string>
+    <string name="textView_date">Date</string>
+    <string name="textView_fuel_type">Fuel type</string>
+    <string name="textView_cost_liter">Cost/liter</string>
+    <string name="textView_supply_cost">Fuel cost</string>
+    <string name="textView_supply_liters">Fuel liters</string>
+    <string name="textView_km_autonomy">Km autonomy</string>
+    <string name="textView_km_tachometer">Km tachometer</string>
+    <string name="textView_km_done">Km done</string>
+    <string name="textView_time">Time (h:min)</string>
+    <string name="textView_liters_100km">Liters/100 km</string>
+    <string name="textView_speed">Speed average media</string>
+    <string name="textView_km_liter">Km/l</string>
+    <string name="textView_cost_km_done">Cost l/100 km</string>
+    <string name="textInputLayout_note">Note</string>
+
+    <!-- activity_archive -->
+    <string name="exportData_button">Export</string>
+    <string name="deleteButton">Delete</string>
+    <string name="saveButton">Save</string>
+    <string name="saved_information">View the input data to be saved</string>
+
+    <!-- activity_export_config -->
+    <string name="buttonSaveConfig">Save</string>
+    <string name="buttonExportToCSV">Export</string>
+    <string name="textViewTitle">Setting Export CSV</string>
+    <string name="editTextCostDiesel">Cost Diesel/liter</string>
+    <string name="editTextCostGasoline">Cost Gasoline/liter</string>
+    <string name="dropdownLanguage">language</string>
+
+</resources>

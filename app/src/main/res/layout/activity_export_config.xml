@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/export_config_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="12dp"
+    tools:context=".ExportConfigActivity">
+
+    <!-- 🔹 Layout bottoni con horizontal chain -->
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/export_config_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <!-- Freccia -->
+        <ImageButton
+            android:id="@+id/goBackButton"
+            android:layout_width="85dp"
+            android:layout_height="55dp"
+            android:background="@drawable/ripple_rounded_button"
+            android:clipToOutline="true"
+            android:clickable="true"
+            android:contentDescription="Chiudi Scheda"
+            android:focusable="true"
+            android:onClick="back"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_arrow_left"
+            android:padding="8dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/buttonSaveConfig"
+            app:layout_constraintHorizontal_chainStyle="spread_inside" />
+
+        <!-- Salva -->
+        <Button
+            android:id="@+id/buttonSaveConfig"
+            android:layout_width="85dp"
+            android:layout_height="55dp"
+            android:background="@drawable/ripple_button"
+            android:onClick="saveConfig"
+            android:padding="8dp"
+            android:text="@string/buttonSaveConfig"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteTextColor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/goBackButton"
+            app:layout_constraintEnd_toStartOf="@id/buttonExportToCSV" />
+
+        <!-- Esporta -->
+        <Button
+            android:id="@+id/buttonExportToCSV"
+            android:layout_width="85dp"
+            android:layout_height="55dp"
+            android:background="@drawable/ripple_button"
+            android:onClick="exportToCSV"
+            android:padding="8dp"
+            android:text="@string/buttonExportToCSV"
+            android:textAllCaps="false"
+            android:textColor="@color/whiteTextColor"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/buttonSaveConfig"
+            app:layout_constraintEnd_toEndOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <!-- 🔸 Titolo -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/textViewTitle"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/export_config_button"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- 📦 RecyclerView -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewExportConfig"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:clipToPadding="false"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintBottom_toTopOf="@id/layoutDieselGasoline"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- ⛽️ Campi Diesel / Gasoline -->
+    <LinearLayout
+        android:id="@+id/layoutDieselGasoline"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="4dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/editTextCostDiesel"
+            android:layout_marginEnd="4dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCostDiesel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="@string/editTextCostGasoline"
+            android:layout_marginStart="4dp">
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/editTextCostGasoline"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="numberDecimal"
+                android:maxLines="1"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.ExposedDropdownMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginStart="4dp">
+
+            <AutoCompleteTextView
+            android:id="@+id/dropdownLanguage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/dropdownLanguage"
+            android:inputType="none"
+            android:focusable="true"
+            android:cursorVisible="true"
+            android:backgroundTint="@color/whiteTextColor"
+            android:textColor="@color/whiteTextColor" />
+        </com.google.android.material.textfield.TextInputLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

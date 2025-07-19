@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fuel</string>
+    <string name="zero">0</string>
+
+    <!-- activity_main -->
+    <string name="archiveButton">Archivio</string>
+    <string name="textView_date">Data</string>
+    <string name="textView_fuel_type">Tipo Carburante</string>
+    <string name="textView_cost_liter">Costo/litro</string>
+    <string name="textView_supply_cost">Rifornimento costo</string>
+    <string name="textView_supply_liters">Rifornimento litri</string>
+    <string name="textView_km_autonomy">Km autonomia</string>
+    <string name="textView_km_tachometer">Km tachimetro</string>
+    <string name="textView_km_done">Km percorsi</string>
+    <string name="textView_time">Tempo (h:min)</string>
+    <string name="textView_liters_100km">Litri/100 km</string>
+    <string name="textView_speed">Velocità media</string>
+    <string name="textView_km_liter">Km/l</string>
+    <string name="textView_cost_km_done">Costo l/100 km</string>
+    <string name="textInputLayout_note">Note</string>
+
+    <!-- activity_archive -->
+    <string name="exportData_button">Esporta</string>
+    <string name="deleteButton">Cancella</string>
+    <string name="saveButton">Salva</string>
+    <string name="saved_information">Visualizza i dati inputati da salvare</string>
+
+    <!-- activity_export_config -->
+    <string name="buttonSaveConfig">Salva</string>
+    <string name="buttonExportToCSV">Esporta</string>
+    <string name="textViewTitle">Configura Esportazione CSV</string>
+    <string name="editTextCostDiesel">Costo Diesel/litro</string>
+    <string name="editTextCostGasoline">Costo Benzina/litro</string>
+    <string name="dropdownLanguage">lingua</string>
+
+</resources>

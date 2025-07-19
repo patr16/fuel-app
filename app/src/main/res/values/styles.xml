@@ -1,0 +1,85 @@
+<resources>
+
+    <!-- 🎨 Tema principale dell'app -->
+    <style name="Theme.Fuel" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colori principali -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/whiteTextColor</item>
+        <item name="colorSecondary">@color/yellow1BackgroundColor</item>
+        <item name="colorOnSecondary">@color/black</item>
+
+        <!-- Assegna gli stili personalizzati -->
+        <item name="editTextStyle">@style/CustomEditTextStyle</item>
+        <item name="buttonStyle">@style/CustomButtonStyle</item>
+        <item name="textInputStyle">@style/CustomTextInputLayout</item>
+    </style>
+    <!-- Stile main_activity -->
+    <!-- 🧮 EditText numerici campi rifornimento attuale-->
+    <style name="CustomEditTextStyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background</item>   <!-- Background nelle EditText -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>           <!-- Dimensione caratteri -->
+        <item name="android:minHeight">40dp</item>
+        <item name="android:gravity">end</item>             <!-- Allineamento numerico a destra -->
+        <item name="android:paddingEnd">4dp</item>          <!-- ✅ margine interno a destra -->
+        <!-- <item name="android:typeface">monospace</item> → se vuoi effetto tabella -->
+    </style>
+
+    <!-- 🧮 EditText numerici campi rifornimento precedente -->
+    <style name="CustomEditTextStyle1" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background1</item>   <!-- Background nelle EditText -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>           <!-- Dimensione caratteri -->
+        <item name="android:minHeight">40dp</item>
+        <item name="android:gravity">end</item>             <!-- Allineamento numerico a destra -->
+        <item name="android:paddingEnd">4dp</item>          <!-- ✅ margine interno a destra -->
+        <!-- <item name="android:typeface">monospace</item> → se vuoi effetto tabella -->
+    </style>
+
+    <!-- 🧮 EditText numerici campi calcolati -->
+    <style name="CustomEditTextStyle2" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edit_text_background2</item>   <!-- Background nelle EditText -->
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>           <!-- Dimensione caratteri -->
+        <item name="android:minHeight">40dp</item>
+        <item name="android:gravity">end</item>             <!-- Allineamento numerico a destra -->
+        <item name="android:paddingEnd">4dp</item>          <!-- ✅ margine interno a destra -->
+        <!-- <item name="android:typeface">monospace</item> → se vuoi effetto tabella -->
+    </style>
+
+    <!-- 🔘 Pulsanti -->
+    <style name="CustomButtonStyle" parent="Widget.MaterialComponents.Button">
+        <item name="android:background">@drawable/button_selector</item>
+        <item name="android:textColor">@color/whiteTextColor</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+    <!-- 🏷️ TextView (etichette) -->
+    <style name="CustomTextViewStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center_vertical|start</item>
+        <!-- <item name="android:layout_marginStart">4dp</item> → se vuoi un margine comune -->
+    </style>
+
+    <!-- 📝 Campo nota fluttuante BUTTARE-->
+    <style name="CustomTextInputLayoutxx" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/skybluBackgroundColor</item>
+        <item name="boxStrokeColor">@color/purple_500</item>
+        <item name="hintTextColor">@color/black</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <!-- 🧮 EditText Nota in activity_main.xml-->
+    <style name="CustomTextInputLayout" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+        <item name="boxBackgroundColor">@color/noteBoxBackground</item>
+        <item name="boxStrokeColor">@color/noteStrokeColor</item>
+        <item name="hintTextColor">@color/noteTextColor</item>
+        <item name="android:textColor">@color/noteTextColor</item>
+    </style>
+
+
+</resources>

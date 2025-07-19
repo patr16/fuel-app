@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArchiveActivity">
+
+    <ImageButton
+        android:id="@+id/goBackButton"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripple_rounded_button"
+        android:clipToOutline="true"
+        android:clickable="true"
+        android:contentDescription="Chiudi Scheda"
+        android:focusable="true"
+        android:onClick="back"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_arrow_left"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/exportData_button"
+        android:layout_width="80dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripple_button"
+        android:onClick="exportData"
+        android:padding="8dp"
+        android:text="@string/exportData_button"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/goBackButton" />
+
+    <Button
+        android:id="@+id/deleteButton"
+        android:layout_width="85dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/ripple_button"
+        android:onClick="removeLine"
+        android:padding="8dp"
+        android:text="@string/deleteButton"
+        android:textAllCaps="false"
+        android:textColor="@color/whiteTextColor"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/exportData_button" />
+
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="339dp"
+        android:layout_height="500dp"
+        android:layout_marginBottom="88dp"
+        android:background="@color/bluBackgroundColor"
+        android:stretchColumns="1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.222"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ScrollView
+        android:layout_width="197dp"
+        android:layout_height="39dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.074"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.13">
+
+        <Spinner
+            android:id="@+id/spinner_data"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/bluBackgroundColor"
+            android:padding="@dimen/spinner_padding" />
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
